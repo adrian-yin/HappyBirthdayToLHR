@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.info-box {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    opacity: 0;
+    animation: show-text-keep 3s 19s;
+    animation-fill-mode: forwards;
+    color: #CCCCCC;
+    font-size: 20px;
+}
+
+.info-box .time {
+    margin-bottom: 20px;
+}
+
+.info-box .time #time-text {
+    color: #FFCC99;
+}
+
+#letter-l, #letter-h, #letter-r {
+    transition: 3s;
+}
+
+.content-box {
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.question-box {
+    position: relative;
+    height: 80%;
+}
+
+.question-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -66%);
+    opacity: 0;
+    color: #99CCFF;
+    font-size: 25px;
+}
+
+#gift1, #gift2, #gift3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #CCCCCC;
+}
+
+#love-l {
+    color: #FF99CC;
+}
+
+#health-h {
+    color: #CCFF66;
+}
+
+#bright-r {
+    color: #66CCCC;
+}
+
+#text1, #text2, #text3, #text4, #text5, #text6 {
+    animation: show-text 8s;
+}
+
+#text8, #text9, #text10, #text11, #text12, #text13, #text14, #text15, #text16 {
+    color: #FFFFFF;
+}
+
+#text7 {
+    animation: show-text-keep 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 48s;
+    color: #FFFFFF;
+}
+
+#text1 {
+    animation-delay: 0s;
+}
+
+#text2 {
+    animation-delay: 8s;
+}
+
+#text3 {
+    animation-delay: 16s;
+}
+
+#text4 {
+    animation-delay: 24s;
+    color: #CCFF99;
+}
+
+#text5 {
+    animation-delay: 32s;
+}
+
+#text6 {
+    animation-delay: 40s;
+    color: #FFFFFF;
+}
+
+@keyframes show-text {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show-text-keep {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.button-box {
+    width: 100%;
+    transform: translate(0, -13px);
+    opacity: 0;
+    visibility: hidden;
+    animation: show-text-keep 3s 50s;
+    /*animation: show-text-keep 3s;*/
+    animation-fill-mode: forwards;
+}
+
+.button {
+    transition: opacity 1s;
+    font-size: 19px;
+    width: 80%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #888888;
+    background: linear-gradient(to right, #CCCCFF, #CCFFFF);
+    display: none;
+}
+
+#button1, #button2 {
+    display: block;
+}
+
+.button-box button:active {
+    transition: opacity 0s;
+    opacity: 0.5;
+}
+
+.button-box #button2:active {
+    transition: opacity 1s;
+}
+
+.button-box .warn {
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 18px;
+    color: #FF0033;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.button-box .input {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
+    transition: opacity 1s;
+    font-size: 19px;
+    width: 80%;
+    border: 0;
+    color: #FFCC99;
+}
+
+.button-box .input input {
+    width: 20%;
+    background: 0;
+    border: 0;
+    text-align: center;
+    font-size: 19px;
+    color: #CCCCFF;
+    border-bottom: 1px solid #888888;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#happy-birthday {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#birthday-time {
+    color: #FFCC99;
+    font-size: 25px;
+    flex: 1;
+    opacity: 0;
+}
+
+#birthday-name {
+    font-size: 35px;
+    flex: 2;
+    opacity: 0;
+}
+
+#birthday-l, #birthday-h, #birthday-r {
+    margin: 0 10px;
+}
+
+#birthday-l {
+    color: #FF99CC;
+}
+
+#birthday-h {
+    color: #CCFF66;
+}
+
+#birthday-r {
+    color: #66CCCC;
+}
+
+#birthday-word {
+    flex: 3;
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to right bottom, #ffcccc, #cd84f1, #ff3838);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+#button7 {
+    flex: 0.6;
+    display: block;
+    font-size: 25px;
+    color: #4b4b4b;
+    opacity: 0;
+}
+
+#robot-a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#my-word-to-robot {
+    width: 100%;
+    text-align: right;
+    color: #f78fb3;
+    flex: 2;
+}
+
+#robot-reply {
+    width: 100%;
+    text-align: left;
+    color: #f5cd79;
+    flex: 3;
+}
+
+#robot-input {
+    width: 100%;
+    text-align: left;
+    color: #3dc1d3;
+    flex: 1;
+}
+
+#robot-input input {
+    width: 75%;
+    font-size: 20px;
+    margin: 10px 0;
+    border: 0;
+    background: 0;
+    border-bottom: 2px solid #546de5;
+    color: #f8a5c2;
+}
+
+#robot-input button {
+    width: 21%;
+    font-size: 18px;
+    margin-left: 2px;
+    border-radius: 8px;
+    border: 0;
+    background: #778beb;
+}
+
+#robot-input button:active {
+    color: #546de5;
+    opacity: 0.5;
+}

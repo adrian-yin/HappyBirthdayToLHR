@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 刘浩冉小朋友生日快乐！ -->
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>一个不知道在干嘛的网页</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- 引入动态背景 -->
+    <script src="js/background.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="info-box">
+        <div class="time">时间：<span id="time-text"></span></div>
+        <div class="collection">收集：
+            <span id="letter-l">?</span>
+            &nbsp;
+            <span id="letter-h">?</span>
+            &nbsp;
+            <span id="letter-r">?</span>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="question-box">
+            <span id="text1" class="question-text">你从梦中醒来，发现周围一片漆黑。</span>
+            <span id="text2" class="question-text">你不知时间，也不知身处何处，甚至不知自己是谁。</span>
+            <span id="text3" class="question-text">正当你紧张迷茫不知所措时，两行信息浮现在你的上方。</span>
+            <span id="text4" class="question-text">“时间我明白，可这个收集是什么意思，我要收集什么？”</span>
+            <span id="text5" class="question-text">也许是听到了你的疑惑，一个模糊的身影突然出现在你的面前。</span>
+            <span id="text6" class="question-text">“孩子，我们来玩个游戏怎么样？”</span>
+            <span id="text7" class="question-text">“回答我三个问题，送你三件礼物。”</span>
+            <span id="text8" class="question-text">“第一个问题，二进制数00010100的十进制是多少？”</span>
+            <span id="text9" class="question-text">“这么简单的问题你都能答错！再给你次机会！认真答题！”</span>
+            <span id="text10" class="question-text">“20岁，真是个美好的年纪呢！第一件礼物‘健康’送给你。”</span>
+            <span id="gift1" class="question-text"><span id="health-h">H</span>EALTH</span>
+            <span id="text11" class="question-text">“继续，我想到一个非常特别的日子，你猜猜我说的是哪一天？”</span>
+            <span id="text12" class="question-text">“笨笨笨！特别的日子当然是2000年6月1日了！”</span>
+            <span id="text13" class="question-text">“这第二件礼物‘智慧’送给你，这样你就会变聪明了。”</span>
+            <span id="text14" class="question-text">“2000年6月1日...猜对了！真聪明，第二件礼物‘智慧’送给你。”</span>
+            <span id="gift2" class="question-text">B<span id="bright-r">R</span>IGHT</span>
+            <span id="text15" class="question-text">“最后一个问题，亲情、爱情、友情，未来的人生中你想要哪个？”</span>
+            <span id="text16" class="question-text">“既然如此......那你可全部拥有！”</span>
+            <span id="gift3" class="question-text"><span id="love-l">L</span>OVE</span>
+        </div>
+        <div class="button-box">
+            <button id="button1" class="button" type="button">“你问吧”</button>
+            <button id="button2" class="button" type="button">转身离开</button>
+            <span id="warn1" class="warn">想走？没门！选上面那个！</span>
+            <button id="button3" class="button" type="button">12</button>
+            <button id="button4" class="button" type="button">20</button>
+            <div id="input1" class="input">
+                <label><input id="input-year" type="text" name="year">年</label>
+                <label><input id="input-month" type="text" name="month">月</label>
+                <label><input id="input-day" type="text" name="day">日</label>
+            </div>
+            <button id="button5" class="button" type="button">确认</button>
+            <button id="button6" class="button" type="button">我都要！！！</button>
+        </div>
+    </div>
+    <div id="happy-birthday">
+        <div id="birthday-time">2000年6月1日</div>
+        <div id="birthday-name">
+            <span id="birthday-l">L</span>
+            <span id="birthday-h">H</span>
+            <span id="birthday-r">R</span>
+        </div>
+        <div id="birthday-word">生日快乐</div>
+        <button id="button7" class="button" type="button">回到2020</button>
+    </div>
+    <div id="robot-a">
+        <div id="my-word-to-robot"></div>
+        <div id="robot-reply">
+            刘浩冉姐姐你好，欢迎回到2020，我是机器人小A，你可以在这里和我聊天。<br />
+            不过尹胥那个家伙还没有怎么训练过我，有的时候我的回复会很蠢，你不要在意。
+        </div>
+        <div id="robot-input">
+            <label>对小A说：<br /><input id="robot-input-text" type="text" name="say-to-a"></label>
+            <button id="button8" type="button">发送</button>
+        </div>
+    </div>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
